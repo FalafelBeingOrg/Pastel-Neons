@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 264: python block expects a non-empty block.
-    init python:
-                ^
+File "game/options.rpy", line 212: expected statement.
+    for i in config.keymap['game_menu']:
+          ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Oct 28 18:11:54 2022
+Sat Oct 29 21:06:18 2022

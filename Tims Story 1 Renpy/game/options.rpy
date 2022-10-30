@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Pastel Blue")
+define config.name = _("Tranquil 4am Radio")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "PastelBlue"
+define build.name = "Tranquil4amRadio"
 
 
 ## Sounds and music ############################################################
@@ -176,7 +176,8 @@ init python:
     ## **.ogg" matches ogg files in the game directory or any of its
     ## subdirectories, and "**.psd" matches psd files anywhere in the project.
 
-    ## Classify files as None to exclude them from the built distributions.
+    ## Classify files as None to exclude them from the built distributions
+
 
     build.classify('**~', None)
     build.classify('**.bak', None)
@@ -207,3 +208,6 @@ init python:
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
+init:
+    $ config.keymap['game_menu'].clear()
+    $ config.keymap['help'].clear()

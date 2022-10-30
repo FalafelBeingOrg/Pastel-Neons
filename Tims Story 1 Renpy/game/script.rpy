@@ -3,13 +3,15 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+
+define t = Character("Tim")
 
 
 # The game starts here.
 
 label start:
-    show bg eyes
-    "Hello"
-    "Dude" "Hello"
+    show bg bed
+    "..." "Are you awake yet?"
+    "..." "..."
+    "..." "Hey are you awake?"
     return
