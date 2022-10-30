@@ -4,14 +4,17 @@
 # name of the character.
 
 
-define t = Character("Tim")
+define tim = Character("Tim")
+define unknown = Character("...")
+define jack = Character("Jack")
 
 
 # The game starts here.
 
 label start:
     show bg bed
-    "..." "Are you awake yet?"
-    "..." "..."
-    "..." "Hey are you awake?"
+    show tim asleep
+    unknown "Are you awake yet?"
+    unknown "..."
+    unknown "Hey are you awake?"
     return
